@@ -1,3 +1,4 @@
+const { targets } = require('./scripts/utils');
 const types = [
   {
     value: 'feat',
@@ -37,30 +38,17 @@ const types = [
     value: 'revert',
     name: 'revert:   Revert to a commit'
   }
-]
-
-const scopes = [
-  'redux-lib',
-  'web',
-  'mobile',
-  'macos',
-  'repo',
-].map(name => ({ name }))
+];
+const scopes = [...targets, 'repo'].map(name => ({
+  name
+}));
 
 module.exports = {
   types,
   scopes,
   scopeOverrides: {
-    chore: [
-      ...scopes,
-      { name: 'npm' }
-    ]
+    chore: [...scopes, { name: 'npm' }]
   },
   allowCustomScopes: true,
-  allowBreakingChanges: [
-    'feat',
-    'fix',
-    'perf',
-    'refactor'
-  ]
-}
+  allowBreakingChanges: ['feat', 'fix', 'perf', 'refactor']
+};
