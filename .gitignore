@@ -5,3 +5,5 @@ lib
 node_modules
 .npmrc
 packages/**/node_modules
+packages/**/dist
+packages/**/lib

@@ -1,12 +1,12 @@
 {
   "name": "@algeff/catch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "744279297 <744279297@qq.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "dist/catch.js",
-  "module": "dist/catch.module.js",
+  "main": "dist/catch.prod.js",
+  "module": "dist/catch.ems-bundler.js",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
