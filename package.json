@@ -8,7 +8,6 @@
     "bootstrap": "yarn install",
     "cleanup": "lerna clean --yes",
     "commit": "git-cz",
-    "commitmsg": "commitlint -e",
     "release": "lerna publish --conventional-commits --message \"chore(npm): publish\"",
     "lerna": "lerna",
     "postinstall": "lerna bootstrap",
@@ -23,11 +22,6 @@
     },
     "cz-customizable": {
       "config": "commitizen.config.js"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
